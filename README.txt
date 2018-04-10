@@ -1,3 +1,5 @@
+This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Stephens, for use with bugwas. The original README follows.
+
 PROGRAM: Genome-wide Efficient Mixed Model Association (GEMMA)
 
 AUTHORS: Xiang Zhou and Matthew Stephens

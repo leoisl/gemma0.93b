@@ -3,12 +3,12 @@ This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Steph
 This is the source code for Docker Hub image https://hub.docker.com/r/dannywilson/gemma0.93b/
 
 To download and run using Docker:
-docker pull dannywilson/gemma0.93b:latest
-docker run -u $(id -u):$(id -g) -v $LOCALDIR:/home/ubuntu dannywilson/gemma0.93b:latest $GEMMAOPTIONS
+docker pull dannywilson/gemma0.93b
+docker run -u $(id -u):$(id -g) -v $LOCALDIR:/home/ubuntu dannywilson/gemma0.93b $GEMMAOPTIONS
 
 To download and run using Singularity:
 singularity pull docker://dannywilson/gemma0.93b
-singularity run -H $LOCALDIR:/home/ubuntu /users/bag/wilson/singularity/gemma0.93b.img $GEMMAOPTIONS
+singularity run -H $LOCALDIR:/home/ubuntu gemma0.93b.img $GEMMAOPTIONS
 
 where $LOCALDIR is the local working directory containing the gemma input files and $GEMMAOPTIONS are the arguments passed to GEMMA. Note that GEMMA writes to a folder called output in the local working directory, which it creates if it does not already exist, so the local working directory must be writable.
 

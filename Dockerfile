@@ -4,7 +4,7 @@ RUN apt-get update -yqq
 RUN apt-get install -yqq libgsl0-dev libatlas-base-dev make g++
 RUN mkdir /tmp/gemma
 COPY . /tmp/gemma
-RUN mkdir /temp/gemma/bin
+RUN mkdir /tmp/gemma/bin
 RUN cd /tmp/gemma && make
 RUN mv /tmp/gemma/bin/gemma /usr/bin/
 WORKDIR /home/ubuntu

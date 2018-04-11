@@ -6,5 +6,6 @@ RUN mkdir /tmp/gemma
 COPY . /tmp/gemma
 RUN cd /tmp/gemma && make
 RUN mv /tmp/gemma/bin/gemma /usr/bin/
+WORKDIR /home/ubuntu
 ENTRYPOINT ["/usr/bin/gemma"]
 

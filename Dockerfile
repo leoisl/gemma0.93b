@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Daniel Wilson
-RUN apt-get update -yqq
-RUN apt-get install -yqq libgsl0-dev libatlas-base-dev make g++
+RUN apt-get -yqq update
+RUN apt-get -yqq install libgsl0-dev libatlas-base-dev make g++
 RUN mkdir /tmp/gemma
 COPY . /tmp/gemma
 RUN mkdir /tmp/gemma/bin

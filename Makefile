@@ -16,7 +16,7 @@ SYS = LNX
 # Disable WITH_ARPACK option only disable -apprx option in the software
 WITH_LAPACK = 1
 FORCE_32BIT = 
-FORCE_DYNAMIC = 1
+FORCE_DYNAMIC = 
 FORCE_FLOAT = 
 
 # --------------------------------------------------------------------
@@ -35,10 +35,10 @@ CPPFLAGS = -Wall -O3
 
 LIBS = -lgsl -lgslcblas -lblas
 
-OUTPUT = $(BIN_DIR)/gemma
+OUTPUT = gemma
 
 ifdef FORCE_FLOAT
-OUTPUT = $(BIN_DIR)/gemmaf
+OUTPUT = gemmaf
 endif
 
 SOURCES = $(SRC_DIR)/main.cpp
@@ -49,7 +49,7 @@ HDR =
 
 LIBS_LNX_D_LAPACK = -llapack
 LIBS_MAC_D_LAPACK = -framework Veclib
-LIBS_LNX_S_LAPACK = -llapack -lgfortran  /usr/lib64/atlas/libf77blas.a /usr/lib64/atlas/libatlas.a
+LIBS_LNX_S_LAPACK = -llapack /usr/lib/gcc/x86_64-redhat-linux/4.1.1/libgfortran.a /usr/lib64/atlas/libf77blas.a /usr/lib64/atlas/libatlas.a
 
 # Options
 

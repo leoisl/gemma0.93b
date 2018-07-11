@@ -1,3 +1,10 @@
+This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Stephens, for use with bugwas.
+
+This is a fork from https://github.com/danny-wilson/gemma0.93b in order to build a static portable binary using Holy Build Box (https://github.com/phusion/holy-build-box).
+
+To build the static portable binary, do bash build_portable_gemma.sh
+
+---- README FROM https://github.com/danny-wilson/gemma0.93b ----
 This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Stephens, for use with bugwas. The original README follows.
 
 This is the source code for Docker Hub image https://hub.docker.com/r/dannywilson/gemma0.93b/

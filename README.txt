@@ -2,7 +2,9 @@ This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Steph
 
 This is a fork from https://github.com/danny-wilson/gemma0.93b in order to build a static portable binary using Holy Build Box (https://github.com/phusion/holy-build-box).
 
-To build the static portable binary, do bash build_portable_gemma.sh
+The static portable binary is already available here: https://github.com/leoisl/gemma0.93b/raw/master/gemma.0.93b
+
+To build the static portable binary, do bash build_portable_gemma.sh , and executable named gemma.0.93b will be produced
 
 ---- README FROM https://github.com/danny-wilson/gemma0.93b ----
 This is a modification of version 0.93 of GEMMA, by Xiang Zhou and Matthew Stephens, for use with bugwas. The original README follows.
